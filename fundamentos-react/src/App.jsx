@@ -1,6 +1,7 @@
 import './App.css'
 import React from 'react'
 
+import ListaAlunos from './components/repeticao/ListaAlunos'
 import Marca from './components/basicos/Marca'
 import Carro from './components/basicos/Carro'
 import Familia from './components/basicos/Familia'
@@ -19,6 +20,10 @@ export default () =>
         <h1>Fundamentos React</h1>
 
         <div className="Cards">
+
+        <Card titulo='#09 - Componente com Filhos #02' color="#88d8b0">
+                <ListaAlunos></ListaAlunos>
+            </Card>
 
             <Card titulo='#08 - Componente com Filhos #02' color="#ffcc5c">
                 <Marca marca="Honda">
