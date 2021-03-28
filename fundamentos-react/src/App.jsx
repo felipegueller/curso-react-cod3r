@@ -1,6 +1,7 @@
 import './App.css'
 import React from 'react'
 
+import TabelaProdutos from './components/repeticao/tabelaProdutos'
 import ListaAlunos from './components/repeticao/ListaAlunos'
 import Marca from './components/basicos/Marca'
 import Carro from './components/basicos/Carro'
@@ -16,12 +17,16 @@ import Primeiro from './components/basicos/Primeiro'
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () =>
-    <div class="App">
+    <div className="App">
         <h1>Fundamentos React</h1>
 
         <div className="Cards">
 
-        <Card titulo='#09 - Componente com Filhos #02' color="#88d8b0">
+            <Card titulo='#10 - Desafio Repetição' color="#45CC02">
+                <TabelaProdutos />
+            </Card>
+
+            <Card titulo='#09 - Componente com Filhos #03' color="#88d8b0">
                 <ListaAlunos></ListaAlunos>
             </Card>
 
@@ -58,7 +63,7 @@ export default () =>
                 />
             </Card>
             
-            <Card titulo="#03 - Terceiro Componente" color="#fec8c1 ">
+            <Card titulo="#03 - Terceiro Componente" color="#f1a9c1 ">
                 <Terceiro
                     aluno="Felipe Gueller" 
                     nota1={45}
