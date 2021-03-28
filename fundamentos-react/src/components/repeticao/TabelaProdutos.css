@@ -9,9 +9,11 @@
 }
 
 .TabelaProdutos .Par {
-    background-color: #ddd;
+    background-color: #dddddd;
+    color: rgba(0, 128, 0, 0.877);
 }
 
 .TabelaProdutos .Impar {
-    background-color: rgb(241, 241, 241);
+    background-color: #f1f1f1;
+    color: blue;
 }

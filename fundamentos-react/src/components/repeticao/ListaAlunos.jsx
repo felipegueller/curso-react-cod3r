@@ -18,6 +18,7 @@ export default props =>{
 
     return(
         <div>
+            <h3>Lista de Alunos/Notas</h3>
             <ul style={{listStyle: "none"}}>
                 {alunosLI}
             </ul>

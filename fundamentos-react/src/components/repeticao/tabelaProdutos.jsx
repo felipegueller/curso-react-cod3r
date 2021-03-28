@@ -15,9 +15,23 @@ export default props => {
         );
     })
 
+    function getTotalValue () {
+         const listPrice =  produtos.map(produto => {
+                console.log(produto)
+                return produto.preco
+        })
+
+        var totalValue = 0;
+        for(var i = 0; i < listPrice.length; i++){
+            totalValue += listPrice[i]
+        }
+        return totalValue.toFixed(2)
+    }
+
     return(
         <div className="TabelaProdutos">
             <table border="1">
+            <caption>Tabela de Produtos</caption>
                 <thead >
                     <tr>
                         <th>Id</th>
@@ -29,6 +43,12 @@ export default props => {
                 <tbody>
                     {listProdutos}
                 </tbody>
+                <tfoot>
+                    <tr>
+                        <td> Valor total </td>
+                        <td>{ getTotalValue() }</td> 
+                    </tr>
+                </tfoot>
             </table>
         </div>
     );

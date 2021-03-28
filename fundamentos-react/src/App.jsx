@@ -26,7 +26,7 @@ export default () =>
                 <TabelaProdutos />
             </Card>
 
-            <Card titulo='#09 - Componente com Filhos #03' color="#88d8b0">
+            <Card titulo='#09 - Componente com Filhos #03' color="#88d8d0">
                 <ListaAlunos></ListaAlunos>
             </Card>
 
