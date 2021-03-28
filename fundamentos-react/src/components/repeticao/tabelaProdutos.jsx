@@ -5,7 +5,7 @@ import './TabelaProdutos.css'
 
 export default props => {
 
-    const listProdutos = produtos.map((produto, i)=> {
+    const productsList = produtos.map((produto, i)=> {
         return (
             <tr key={produto.id} className={i % 2 === 0 ? 'Par' : 'Impar'}>
                 <td>{produto.id}</td>
@@ -16,14 +16,13 @@ export default props => {
     })
 
     function getTotalValue () {
-         const listPrice =  produtos.map(produto => {
-                console.log(produto)
+         const priceList =  produtos.map(produto => {
                 return produto.preco
         })
 
         var totalValue = 0;
-        for(var i = 0; i < listPrice.length; i++){
-            totalValue += listPrice[i]
+        for(var i = 0; i < priceList.length; i++){
+            totalValue += priceList[i]
         }
         return totalValue.toFixed(2)
     }
@@ -41,7 +40,7 @@ export default props => {
                 </thead>
                 
                 <tbody>
-                    {listProdutos}
+                    { productsList }
                 </tbody>
                 <tfoot>
                     <tr>
