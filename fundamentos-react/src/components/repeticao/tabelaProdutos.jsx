@@ -42,9 +42,10 @@ export default props => {
                 <tbody>
                     { productsList }
                 </tbody>
+
                 <tfoot>
                     <tr>
-                        <td> Valor total </td>
+                        <td > Valor total </td>
                         <td>{ getTotalValue() }</td> 
                     </tr>
                 </tfoot>
