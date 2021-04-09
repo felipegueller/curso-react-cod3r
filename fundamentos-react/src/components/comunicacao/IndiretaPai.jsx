@@ -14,6 +14,7 @@ export default props => {
         setIdade(idade)
         setNerd(nerd)
     }
+    
     return (
         <div>
             <div>
