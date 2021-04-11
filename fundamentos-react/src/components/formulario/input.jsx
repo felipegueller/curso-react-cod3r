@@ -1,6 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 import React, { useState } from 'react'
 import './input.css'
+
 export default props => {
     
     const [value, setValue] = useState('Inicial')
